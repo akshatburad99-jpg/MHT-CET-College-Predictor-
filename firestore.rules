@@ -1,0 +1,9 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /student_entries/{entryId} {
+      allow create: if true; // Let any aspiring student submit their mock preference sheet details safely.
+      allow read, delete, write: if request.auth != null && request.auth.token.email == "sapnamburad@gmail.com"; // Restrict all other management operations to u/Wise_Papaya368.
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "MHT CET College Predictor",
+  "description": "Predict engineering colleges in Maharashtra based on MHT CET Percentile, Category, Gender, and Branch preferences.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
